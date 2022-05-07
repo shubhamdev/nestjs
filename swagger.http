@@ -1,0 +1,54 @@
+
+POST http://localhost:5032/eligibility/check HTTP/1.1
+
+{
+  "maid": 0,
+  "hospitalId": 0,
+  "isMedical": true,
+  "isSurgical": true,
+  "treatmentId": "",
+  "roomRent": 0,
+  "los": 0,
+  "doa": "2022-03-29T08:57:54.536Z",
+  "dod": "2022-03-29T08:57:54.536Z",
+  "claimId": 0,
+  "intimationId": 13126387,
+  "totalBilledAmount": 0
+}
+
+
+
+POST http://localhost:5032/eligibility/create HTTP/1.1
+
+{
+  "claimId": 0,
+  "intimationId": 13126387,
+  "beneficiaryName": "test",
+  "dBType": "MAUHS",
+  "beneficiaryID": 5033557889,
+  "policyID": 31055680,
+  "hospitalID": 229532,
+  "roomRent": 0,
+  "claimedAmount": 88000,
+  "smsPhoneNumber": "8147849902",
+  "emailAddress": "shubham1838@gmail.com",
+  "whatsappPhoneNumber": "8147849902",
+  "doa": "2022-03-21T10:00:00",
+  "dod": "2022-03-24T10:00:56",
+  "ailmentId": "O82.0",
+  "procedureId": "3240",
+  "additionParam": "",
+  "createdFrom": "Intimation"
+}
+
+
+# Request URL: https://proclaim-api-prod.mediassist.in/fetchhospitalroomrent -- 
+# { 
+#   HospId : number
+# InsurerId : number
+# }
+
+# {"hospID":128414,"insurerId":1,"LoginName":"chaturvedi.shubham","LoginEmailId":"shubham.chaturvedi@mediassist.in","LoginUserId":9503}
+
+# https://proclaim-api-prod.mediassist.in/master/packagedetails
+# {"hospId":128414,"icDs":["O82.0"],"insurerShortName":["NIA"],"LoginName":"chaturvedi.shubham","LoginEmailId":"shubham.chaturvedi@mediassist.in","LoginUserId":9503}
